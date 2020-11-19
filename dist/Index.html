@@ -1,0 +1,48 @@
+<!-- © André Escorel 2020 😎 -->
+
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Uma simples caluladora funcional 😴</title>
+</head>
+
+<body onkeypress="main.digitar(event)">
+  <div class="main-container">
+    <h1 style="font-size:x-large; margin-bottom: 50px;">Uma simples caluladora funcional 😴</h1>
+    <input type="submit text" disabled id="expression-field"/>
+    <div class="teclado">
+      <button onclick="main.toHex()" > hex </button>
+      <button onclick="main.toBin()"> bin </button>
+      <button onclick="main.clean()"> clean </button>
+      <button onclick="main.backspace()"> <img src="../assets/delete.svg"> </button>
+      <button onclick="main.typeValue('%')"> rest </button>
+      <button onclick="main.pow()"> x² </button>
+      <button onclick="main.squareRoot()"> <img src="../assets/la_square-root-alt.svg"> </button>
+      <button onclick="main.typeValue('/')"> <img src="../assets/fxemoji_heavydivisionsign.svg"> </button>
+      <button onclick="main.type(event)"> 7 </button>
+      <button onclick="main.type(event)"> 8 </button>
+      <button onclick="main.type(event)"> 9 </button>
+      <button onclick="main.typeValue('*')"> <img src="../assets/emojione-v1_heavy-multiplication-x.svg"> </button>
+      <button onclick="main.type(event)"> 4 </button>
+      <button onclick="main.type(event)"> 5 </button>
+      <button onclick="main.type(event)"> 6 </button>
+      <button onclick="main.typeValue('-')"> <img src="../assets/minus.svg"> </button>
+      <button onclick="main.type(event)"> 1 </button>
+      <button onclick="main.type(event)"> 2 </button>
+      <button onclick="main.type(event)"> 3 </button>
+      <button onclick="main.typeValue('+')"> <img src="../assets/plus.svg"> </button>
+      <button onclick="main.type(event)"> . </button>
+      <button onclick="main.type(event)"> 0 </button>
+      <button onclick="main.calculate()" class="large"> <img src="../assets/equal.svg"> </button>
+    </div>
+  </div>
+</body>
+<script src="./kotlin.js"></script>
+<script src="./main.js"></script>
+
+</html>

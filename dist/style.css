@@ -1,0 +1,65 @@
+body * { 
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto auto;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 75px;
+  font-size: 25px;
+  padding: 0 10px;
+  padding-top: 6%;
+  overflow: scroll;
+  text-align: right;
+  background-color: #eeeeee;
+  border: 1px solid #666;
+  border-radius: 3px;
+  color: #000;
+}
+
+input :focus, :-moz-focusring {
+  border: 1px solid red !important;
+}
+
+
+.teclado {
+  display: grid;
+  grid-template-columns: [start] 1fr [_01] 1fr [middle] 1fr [_02] 1fr [end];
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.large {
+  grid-column: middle/end;
+}
+
+.error {
+  background-color: #fbeeee !important;
+  border-radius: 3px;
+  border: 1px solid rgba(200, 43, 43, 0.877);
+}
+
+.teclado button {
+  min-height: 45px;
+  min-width: 85px;
+  font-weight: 900;
+  font-size: 20px;
+  
+}
